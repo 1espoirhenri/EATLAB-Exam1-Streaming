@@ -1,0 +1,7 @@
+﻿fastapi
+uvicorn
+opencv-python
+ultralytics
+numpy
+pydantic  
+requests

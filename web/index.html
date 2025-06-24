@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Realtime Dispatch Monitoring</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <h1>Realtime Dispatch Monitoring</h1>
+
+  <!-- Bọc chung -->
+  <div class="container">
+    <!-- Video -->
+    <div class="left">
+      <img id="live" src="/video_feed">
+    </div>
+
+    <!-- Canvas + Table -->
+    <div class="right">
+      <!-- <canvas id="canvas"></canvas> -->
+      <table id="result-table">
+        <thead>
+          <tr><th>Label</th><th>Conf</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="row">
+    <button id="btnCapture" class="primary">Capture Frame</button>
+    <button id="btnDraw" class="secondary">Vẽ BBox</button>
+    <button id="btnSave" class="primary">Gửi Feedback</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
